@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-public class Output {
+public class Input {
 	
 	public static int[] splitInput(String input) {
 		String[] outputArray;

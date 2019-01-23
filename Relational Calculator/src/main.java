@@ -12,7 +12,7 @@ public class main {
 		while(numbers.length <3) {
 			System.out.println("Please input 3 or more numbers seperated by a ',':");
 			String input = scanner.nextLine();
-			numbers = Output.splitInput(input);
+			numbers = Input.splitInput(input);
 			
 		}
 		String toPrint = calc.calculateCombinations(numbers);
