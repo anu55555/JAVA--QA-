@@ -1,0 +1,9 @@
+package doggoContest;
+
+public class RankingsOfDogs {
+	
+	int[] dogRankings {
+		1, 2,  
+	}
+
+}

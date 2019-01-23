@@ -1,0 +1,25 @@
+package doggoContest;
+
+import java.util.Scanner;
+
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner userInput = new Scanner(System.in);
+				
+		System.out.println("Plese enter your dogs placement number (e.g. 1: ");
+		
+		int dogPlacement = userInput.nextInt();
+		System.out.println("Your dog placed: " + dogPlacement);
+		
+		for (int i = 0; i >=101; i++) {
+			System.out.print(i);
+		}
+		
+
+	}
+
+}

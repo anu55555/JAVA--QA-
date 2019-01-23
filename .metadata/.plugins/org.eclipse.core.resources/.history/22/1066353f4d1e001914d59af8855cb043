@@ -1,0 +1,13 @@
+
+public class arraytest {
+
+	public static void main(String[] args) {
+		int [] array1 = {6,5,9,0,10,16,58,32,50,9};
+		 System.out.print("array1: [ ");
+		        for (int i = 0; i < array1.length; i++) {
+		         System.out.print(array1[i] + " ");
+		 }
+		        System.out.print(" ]");
+		        
+   }
+}

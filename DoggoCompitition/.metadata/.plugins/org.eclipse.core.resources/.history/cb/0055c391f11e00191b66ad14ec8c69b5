@@ -1,0 +1,12 @@
+package doggoContest;
+
+public class ListOfDogPlaces {
+
+	public static void main(String[] args) {
+		int[] dogPlacing {
+			1
+		}
+
+	}
+
+}

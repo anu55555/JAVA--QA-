@@ -1,10 +1,15 @@
 import java.util.Scanner;
-public class Main {
-	public static void main(String[] args) {
+
+public class main 
+{
+	public static void main(String[] args) 
+	{
 		int firstnumber, secondnumber;
 		Boolean trueorfalse;
+		int array2[] = new int[10];
+		
 		System.out.println("Eneter two intergers and one boolean value");
-		Scanner in = new Scanner(System.in);
+		Scanner in = new Scanner (System.in );
 		firstnumber = in.nextInt();
 		secondnumber = in.nextInt();
 		trueorfalse =in.nextBoolean();
@@ -25,5 +30,30 @@ public class Main {
 	      outputMessage = " The total answer is " + total;
 		 System.out.println(outputMessage);
 		 
+		 total = Calculator.booleancheck(firstnumber,secondnumber, trueorfalse);
+		     for (int i =0; i<10; i++)
+		     {
+		    	 System.out.println(total);
+		     }
+		      
+		      array2 = Calculator.arrayiterator1();
+		      for (int j = 0; j < array2.length; j++)
+		      { 
+		    	  System.out.print(array2[j] + " ");
+		    	  
+              }	
+		        array2 = Calculator.arrayiterator1();
+				int sum = 0;
+			    int k = 0;
+			      while ( k < array2.length)
+			      {
+			    	  sum = array2[k] + array2[k+1];
+			          System.out.println(sum);
+			    	  k = k+2;
+			      }  
+			      
+			      
+	}
 }
-}
+
+	
