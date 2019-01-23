@@ -12,12 +12,12 @@ public class main
 		   float userpercentage=0;
 		   float computerpercentage=0;
 		   float tiepercentage=0;
-		    do 
+		    for(i=0;i<10;i++)
 		    {
 		    	 System.out.println("Plese enter your your choice from Rock, Paper,Scissors or Exit ");
 				 Scanner userInput = new Scanner(System.in);
 			     userChoice = userInput.nextLine();
-			     i=10;
+			     
 		      if(userChoice!="Exit")
 			  {
 				String[] availableChoices = {"Rock", "Paper", "Scissors"};
@@ -37,14 +37,14 @@ public class main
 			  System.out.println("User Score is  " + userscore);
 			  System.out.println();
 			  //System.out.println("Plese enter your your choice from Rock, Paper,Scissors or Exit ");
-			  i=i-1;
+			 
 			  
 			  }
 			 else if(userChoice.equals("Rock") & computerPlay.equals("Paper") || ( userChoice.equals("Paper") & computerPlay.equals("Scissors")) || (userChoice.equals("Scissors") & computerPlay.equals("Rock")))
 			 {
 				 System.out.println("Computer Wins");
 				// System.out.println("Plese enter your your choice from Rock, Paper,Scissors or Exit ");
-				 i=i-1;
+				 
 				 computerscore=computerscore+1;
 				 System.out.println("Tie Score is  " + tiescore);
 				 System.out.println("Computer Score is  " + computerscore);
@@ -56,7 +56,7 @@ public class main
 			 {
 				 System.out.println("User Wins");
 				 //System.out.println("Please enter your your choice from Rock, Paper,Scissors or Exit ");
-				 i=i-1;
+				
 				 userscore=userscore+1;
 				 System.out.println("Tie Score is  " + tiescore);
 				 System.out.println("Computer Score is  " + computerscore);
@@ -84,7 +84,7 @@ public class main
 				 System.out.println("Please Enter valid Choice");
 				 System.out.println();
 				 //System.out.println("Plese enter your your choice from Rock, Paper,Scissors or Exit ");
-				 i=i-1;
+				 
 				 
 			 }
 			
@@ -93,7 +93,7 @@ public class main
 		    	     System.out.println("thank you for playing");
 		    	     break;
 		               } 
-	      }while (i<=10);   
+	      }   
 		     System.out.println("thank you for playing 10 games & Your Scores are as below");
 		     
 		     tiepercentage=((tiescore/10)*100);
